@@ -9,7 +9,7 @@ from mcrcon import MCRcon as mcr
 
 bot = commands.Bot(command_prefix="!",\
                    intents=d.Intents.all(),
-				   help_command=None);
+                   help_command=None);
 
 rcon = mcr("localhost", env["RCON_PASS"], port=25575);
 
@@ -62,7 +62,7 @@ async def dyn_ipv4():
 
 	if not res.text.startswith("ERROR"):
 		await send_channel(int(env["WARN_CHAN"]), \
-		                   "IPv4 do servidor mudou. "\
+                           "IPv4 do servidor mudou. "\
                            "Aguarde ~10 minutos para a propagação");
 
 @bot.hybrid_command(name="ipwl")

@@ -1,0 +1,2 @@
+- transformar servidor do minecraft em serviço do init daemon pra não
+  ficar como subprocesso
